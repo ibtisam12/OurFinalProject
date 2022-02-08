@@ -38,6 +38,6 @@ jobs:
             # Required mail subject:
             subject: Github Actions job result
             # Required recipients' addresses:
-            to: obiwan@example.com,yoda@example.com
+            to: ibtisamhasnain@gmail.com
             # Required sender full name (address can be skipped):
-            from: Luke Skywalker # <user@example.com>
+            from: Mirza Mohammad Hamza
