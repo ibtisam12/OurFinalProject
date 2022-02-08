@@ -21,9 +21,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Simple Script
-        run: echo Hello, world!
+      - run: echo Hello, world!
       - name: Send mail
-      - uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v3
         with: 
           # Required mail server address:
             server_address: smtp.gmail.com
