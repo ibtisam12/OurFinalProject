@@ -41,3 +41,4 @@ jobs:
             to: ibtisamhasnain@gmail.com
             # Required sender full name (address can be skipped):
             from: Mirza Mohammad Hamza
+            body: Build job of ${{github.repository}} completed successfully!
