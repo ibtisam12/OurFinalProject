@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Pull code') {
       steps {
-        echo 'Build Successfull'
+        bat(script: 'git pull origin master', returnStatus: true)
       }
     }
 
