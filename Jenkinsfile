@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Pull code') {
       steps {
-        bat(script: 'git pull origin master', returnStatus: true)
+        git(url: 'https://github.com/ibtisam12/OurFinalProject.git', branch: 'master')
       }
     }
 
