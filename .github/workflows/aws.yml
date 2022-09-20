@@ -19,4 +19,4 @@ jobs:
           passphrase: ""
           port: 22
           script: |
-            cd /home/ubuntu/
+            cd /home/ec2-user
