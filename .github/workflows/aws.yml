@@ -1,0 +1,22 @@
+name: Deploy to Development Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: "18.183.198.172"
+          username: "ec2-user"
+          key: ${{ secrets.PRIVATE_KEY }}
+          passphrase: ""
+          port: 22
+          script: |
+            cd /home/ubuntu/
