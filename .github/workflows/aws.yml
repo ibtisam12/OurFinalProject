@@ -15,7 +15,7 @@ jobs:
         with:
           host: "18.183.198.172"
           username: "ec2-user"
-          key: ${{ secrets.PRIVATE_KEY }}
+          key: ${{ secrets.EC2_KEY }}
           passphrase: ""
           port: 22
           script: |
